@@ -1,35 +1,63 @@
- *{
-background: #f7f7f7;
-color: black;
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+body {
+  margin: 0px;
+  background: #f7f7f7;
+  color: black;
+}
 
- }
- .logo{
-     font-family: fantasy;
- }
- .icon{
-     width: 20px;
-     height: 20px;
- }
- .badge {
-    padding-left: 9px;
-    padding-right: 9px;
-    -webkit-border-radius: 9px;
-    -moz-border-radius: 9px;
-    border-radius: 9px;
-  }
-  
-  .label-warning[href],
-  .badge-warning[href] {
-    background-color: #c67605;
-  }
-  #lblCartCount {
-      font-size: 12px;
-      background: #ff0000;
-      color: #fff;
-      padding: 0 5px;
-      vertical-align: top;
-      margin-left: -10px; 
-  }
-  .slider-indicator{
-      background: transparent;
-  }
+.navbarz {
+  background: #f7f7f7;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  align-content: center;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+.navbarz .navlogo {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: fantasy;
+}
+.navbarz .navlinks {
+  font-weight: 10px;
+  font-size: 20px;
+  transition: 0.3s ease;
+  background: #f7f7f7;
+  border-bottom: 4px solid #f7f7f7;
+  border-top: 4px solid #f7f7f7;
+  margin: 0 15px;
+}
+.navbarz a {
+  text-decoration: none;
+  color: black !important;
+}
+.navbarz .navlinks:hover {
+  border-top: 4px solid #7da2a9;
+  border-bottom: 4px solid #7da2a9;
+  padding: 5px 0;
+}
+.navbarz .navsearch {
+  margin: 0 15px;
+}
+.navbarz .navsearch input[type=search] {
+  float: right;
+  padding: 6px;
+  border-color: #7da2a9;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.navbarz .navicons {
+  display: flex;
+  justify-self: right;
+  align-items: center;
+}
+.navbarz .navicons .carticon img {
+  width: 20px;
+  height: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

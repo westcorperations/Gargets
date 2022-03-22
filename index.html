@@ -1,112 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <title>Gargets|Home </title>
 </head>
 <body>
-<!-- navigation bar section -->
-        <nav class="navbar navbar-expand-lg fixed-top  navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand text-dark logo" href="#">GARGETS</a>
-               
-              <a class="nav-link me-auto mb-0 mb-lg-0  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <img src="images/abstract-user-flat-4.svg"class="icon"  alt="">
-                
-              </a>
-              
-              <a class="nav-link mb-0 mb-lg-0 " href="#">
-                <img src="images/shopping-cart.png" alt="" class="icon"srcset="">
-                <span class='badge badge-warning' id='lblCartCount'> 0 </span>
-
-              </a>
-              <a class="nav-link mb-0 mb-lg-0 " href="#">
-                <img src="images/wishlist.svg" alt="" class="icon"srcset="">
-                <span class='badge badge-warning' id='lblCartCount'> 0 </span>
-
-              </a>
-          
-              <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Signup</a></li>
-                <li><a class="dropdown-item" href="#">Login</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-              </ul>
-           
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                 
-                <form class="d-flex float-end">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-                
-              </div>
-               
-            </div>
-            
-           
-          </nav>
-          <!-- navbar section ends here -->
-
-<!--slider display section  -->
-<div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
-  <div class="carousel-indicators slider-indicator">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/banner1.jpg" class="d-block w-100" alt="...">
+  <div class="navbarz">
+    <div class="navlogo">
+      <a href="index.html">
+        Gargets </a></div>
+    <div class="navlinks">
+      <a href="#">
+        link1 </a>
     </div>
-    <div class="carousel-item">
-      <img src="images/banner1.jpg" class="d-block w-100" alt="...">
+    <div class="navlinks ">
+      <a href="#">
+        link2</a>
     </div>
-    <div class="carousel-item">
-      <img src="images/banner1.jpg" class="d-block w-100" alt="...">
+    <div class="navlinks ">
+       <a href="#">
+        link3 </a>
+    </div>
+    <div class="navsearch">
+      <form action="">
+        <input type="search" name="" id="" placeholder="search any keyword">
+      </form>
+    </div>
+    <div class="navicons">
+      <div class="carticon">
+        <img src="/images/shopping-cart.png" alt="cart" srcset="">
+      </div>
+      <div class="wishlisticon"></div>
     </div>
   </div>
-  <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon slider-indicator " aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon  slider-indicator" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-
-<!-- carosel slider ends  -->
-
-<!--Top product section -->
-
-
-
 </body>
-<script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+<script src="index.js"></script>
+<script src="/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
+
 </html>

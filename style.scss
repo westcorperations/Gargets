@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+// varables
+$primaryColor1:#7da2a9;
+$primaryColor2:#f7f7f7;
+$btnsucess1:lightgreen;
+$btnDanger:red;
+$txtcolor:black;
+$fullwidth:100%;
+$navlinktextsize:17px;
+
+
+
+
+// body style
+body {
+    margin: 0px;
+    background: $primaryColor2;
+    color: $txtcolor;
+}
+
+// navigation bar style
+.navbarz {
+    background: $primaryColor2;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    width: $fullwidth;
+
+    font: {
+        size: $navlinktextsize;
+        family: Raleway;
+    }
+
+    align-content: center;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+
+    .navlogo {
+        font: {
+            size: 25px;
+            weight: bold;
+            family: fantasy;
+            
+        }
+
+    }
+
+    .navlinks {
+        font: {
+            weight: 10px;
+            size: 20px;
+        }
+
+        transition: 0.3s ease;
+        background: $primaryColor2;
+
+        border: {
+            bottom: 4px solid $primaryColor2;
+            top: 4px solid $primaryColor2;
+
+        }
+
+        margin: 0 15px;
+
+
+
+
+    }
+
+    a {
+        text-decoration: none;
+        color: $txtcolor !important ;
+        
+    }
+
+    .navlinks:hover {
+
+        border-top: 4px solid $primaryColor1;
+        border-bottom: 4px solid $primaryColor1;
+        padding: 5px 0;
+
+
+    }
+
+    .navsearch {
+        margin: 0 15px;
+        input[type=search] {
+            float: right;
+            padding: 6px;
+            border: {
+                color: $primaryColor1;
+                radius:10px;
+
+
+                
+            }
+            font-size: 15px;
+          }
+    }
+
+.navicons{
+    display: flex;
+justify-self: right;
+align-items: center;
+
+.carticon{
+    img{
+        
+        width:20px;
+        height:20px;
+    }
+}
+}
+
+}
