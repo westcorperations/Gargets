@@ -13,6 +13,7 @@ $navlinktextsize:17px;
 
 // body style
 body {
+    max-width: 100%;
     margin: 0px;
     background: $primaryColor2;
     color: $txtcolor;
@@ -22,8 +23,9 @@ body {
 .navbarz {
     background: $primaryColor2;
     display: flex;
-    flex-direction: row;
-    padding: 20px;
+    flex-direction:row;
+     justify-content:space-between;
+    padding: 10px;
     width: $fullwidth;
 
     font: {
@@ -35,45 +37,92 @@ body {
     text-align: center;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 
-    .navlogo {
-        font: {
-            size: 25px;
-            weight: bold;
-            family: fantasy;
-            
-        }
-
+    @media screen and (max-width:800px){
+.navbarz{
+    padding: 10px;
+}
     }
 
     .navlinks {
-        font: {
-            weight: 10px;
-            size: 20px;
-        }
-
-        transition: 0.3s ease;
+        display:flex;
         background: $primaryColor2;
+        flex-direction: row;
+        justify-content: space-between;
+        
 
-        border: {
-            bottom: 4px solid $primaryColor2;
-            top: 4px solid $primaryColor2;
+        .navlogo {
+                    font: {
+                        size: 20px;
+                        weight: bold;
+                        family: fantasy;
+                        
+                        
+                    }
+            
+                }
+                .navlink{
+                    font: {
+                        weight: 10px;
+                        size: 20px;
+                    }
+            
+                   transition: 0.3s ease;
+                   background: $primaryColor2;
+            
+                    border: {
+                        bottom: 4px solid $primaryColor2;       
+                             top: 4px solid $primaryColor2;
+                    }
+            
+                    margin: 0 20px;
+                }
+                @media screen and (max-width:600px){
+                    .navlink{
+                    margin:0 10px;
+                    }
+                }
 
-        }
 
-        margin: 0 15px;
-
-
-
-
-    }
+     }
 
     a {
         text-decoration: none;
         color: $txtcolor !important ;
         
     }
+      
+.dropdown-content {
+   display: none;
+  position: absolute;
+  background-color: $primaryColor2;
+  min-width: 160px;
+  margin-top: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 
-    .navlinks:hover {
+  a {
+    float: none;
+    color: black;
+    padding:12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    
+  }
+  a:hover{
+    background-color:$primaryColor1;
+    color: $primaryColor2;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+
+   
+  }
+  
+
+}
+    .navlink:hover {
 
         border-top: 4px solid $primaryColor1;
         border-bottom: 4px solid $primaryColor1;
@@ -98,18 +147,125 @@ body {
           }
     }
 
-.navicons{
+ .navicons{
     display: flex;
-justify-self: right;
-align-items: center;
+justify-content: space-between;
+// // align-items: center;
+ background-color: $primaryColor2;
 
-.carticon{
-    img{
+ .navicon{
+    
+
+       transition: 0.3s ease;
+       background: $primaryColor2;
+
+        border: {
+            bottom: 4px solid $primaryColor2;       
+                 top: 4px solid $primaryColor2;
+        }
+
+        margin: 0px 7px;
+        align-items: center;
+    
+
+
+
+a {
+text-decoration: none;
+color: $txtcolor !important ;
+
+}
+
+ }
+    img{  
+           
+         width:20px;
+        height:20px;    }
+ }
+ .navicon:hover {
+
+    border-top: 4px solid $primaryColor1;
+    border-bottom: 4px solid $primaryColor1;
+    padding: 5px 0;
+
+
+}
+.menu{
+        margin: 0 10px;
+        align-items: center;
         
-        width:20px;
-        height:20px;
-    }
-}
-}
+    img{
 
+    
+    width: 20px;
+    height: 20px;
 }
+}
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+  }
+  
+  .label-warning[href],
+  .badge-warning[href] {
+    background-color: #c67605;
+  }
+  #lblCartCount {
+      font-size: 12px;
+      background: #ff0000;
+      color: #fff;
+      padding: 0 6px;
+      vertical-align: top;
+      margin-left: -10px; 
+  }
+  
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+// side nav
+.sidenav{
+    height:100%;
+    width:0px;
+    position:fixed;
+z-index:1;
+top:0;
+left:0;
+background: $primaryColor2;
+overflow-x: hidden;
+padding-top: 60px;
+transition:0.5s;
+
+
+
+
+a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-family: Releway;
+    font-size: 20px;
+    color:$primaryColor1;
+    display: block;
+    transition: 0.3s;
+  }
+   a:hover {
+    color: $primaryColor1;
+    border-top: 4px solid $primaryColor1;
+        border-bottom: 4px solid $primaryColor1;
+        padding: 5px 0;
+  }
+   .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+    margin-right: 20px;
+  }
+}
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }

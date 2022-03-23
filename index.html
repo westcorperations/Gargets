@@ -7,36 +7,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-  <title>Gargets|Home </title>
+  <title>Gadgets|Home </title>
 </head>
+
 <body>
   <div class="navbarz">
-    <div class="navlogo">
-      <a href="index.html">
-        Gargets </a></div>
-    <div class="navlinks">
-      <a href="#">
-        link1 </a>
-    </div>
-    <div class="navlinks ">
-      <a href="#">
-        link2</a>
-    </div>
-    <div class="navlinks ">
-       <a href="#">
-        link3 </a>
-    </div>
-    <div class="navsearch">
-      <form action="">
-        <input type="search" name="" id="" placeholder="search any keyword">
-      </form>
-    </div>
-    <div class="navicons">
-      <div class="carticon">
-        <img src="/images/shopping-cart.png" alt="cart" srcset="">
+    <div class="navlinks   ">
+      <div class="menu d-xl-none">
+        <button class="navbar-toogler" onclick="openNav()">
+
+          <img src="/images/menu.png" alt="" srcset="" id="">
+        </button>
       </div>
-      <div class="wishlisticon"></div>
+      <div class="navlogo d-none d-md-block  ">
+        <a href="index.html">
+          Gadgets </a></div>
+      <div class="navlink d-none d-md-block dropdown-toggle dropdown">
+        <a href="#">Account</a>
+        <div class="dropdown-content">
+        <a href="#">Profile</a>
+        <a href="#">Login</a>
+        <a href="#">Signup</a>
+        </div>
+      </div>
+      <div class="navlink d-none d-md-block dropdown-toggle dropdown">
+        <a href="#">Category</a>
+        <div class="dropdown-content">
+          <a href="#">Phones</a>
+          <a href="#">Laptop</a>
+          <a href="#">Accessories</a>
+          </div>
+      </div>
+      <div class="navlink d-none d-md-block">
+        <a href="#">
+          About Us</a>
+      </div>
+      <div class="navsearch d-none d-md-block">
+        <form action="">
+          <input type="search" name="" id="" placeholder="search any product">
+        </form>
+      </div>
+
     </div>
+
+
+    <div class="navicons ">
+
+
+
+      <div class="navicon">
+        <img src="/images/wishlist.svg" alt="cart" class="">
+        <span class='badge badge-warning' id='lblCartCount'> 5 </span>
+
+      </div>
+      <div class="navicon">
+        <img src="/images/shopping-cart.png" alt="cart" class="">
+        <span class='badge badge-warning' id='lblCartCount'> 5 </span>
+
+
+      </div>
+
+    </div>
+  </div>
+  <!-- side nav -->
+  <div class="sidenav" id="mySidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<h5 class="text-center">Account</h5>
+<a href="#" class="navlink "><span><img src="/images/caret-right (1).svg" alt=""></span> Profile</a>
+<a href="#" class="navlink "><span><img src="/images/caret-right (1).svg" alt=""></span> Login</a>
+<a href="#" class="navlink "><span><img src="/images/caret-right (1).svg" alt=""></span> Signup</a>
+<h5 class="text-center">Categories</h5>
+<a href="#" class="navlink "> <span><img src="/images/caret-right (1).svg" alt=""></span>Phone </a>
+    <a href="#" class="navlink "><span><img src="/images/caret-right (1).svg" alt=""></span>Computers</a>
+    <a href="#" class="navlink "><span><img src="/images/caret-right (1).svg" alt=""></span>Accessories</a>
+   <h5 class="text-center">Others</h5>
+   <a href="#" class="navlink "> <span><img src="/images/caret-right (1).svg" alt=""></span>About Us </a>
+
+
+
   </div>
 </body>
 <script src="index.js"></script>

@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 body {
+  max-width: 100%;
   margin: 0px;
   background: #f7f7f7;
   color: black;
@@ -9,7 +10,8 @@ body {
   background: #f7f7f7;
   display: flex;
   flex-direction: row;
-  padding: 20px;
+  justify-content: space-between;
+  padding: 10px;
   width: 100%;
   font-size: 17px;
   font-family: Raleway;
@@ -17,25 +19,66 @@ body {
   text-align: center;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
-.navbarz .navlogo {
-  font-size: 25px;
+@media screen and (max-width: 800px) {
+  .navbarz .navbarz {
+    padding: 10px;
+  }
+}
+.navbarz .navlinks {
+  display: flex;
+  background: #f7f7f7;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbarz .navlinks .navlogo {
+  font-size: 20px;
   font-weight: bold;
   font-family: fantasy;
 }
-.navbarz .navlinks {
+.navbarz .navlinks .navlink {
   font-weight: 10px;
   font-size: 20px;
   transition: 0.3s ease;
   background: #f7f7f7;
   border-bottom: 4px solid #f7f7f7;
   border-top: 4px solid #f7f7f7;
-  margin: 0 15px;
+  margin: 0 20px;
+}
+@media screen and (max-width: 600px) {
+  .navbarz .navlinks .navlink {
+    margin: 0 10px;
+  }
 }
 .navbarz a {
   text-decoration: none;
   color: black !important;
 }
-.navbarz .navlinks:hover {
+.navbarz .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f7f7f7;
+  min-width: 160px;
+  margin-top: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.navbarz .dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.navbarz .dropdown-content a:hover {
+  background-color: #7da2a9;
+  color: #f7f7f7;
+}
+.navbarz .dropdown-content .dropdown {
+  float: left;
+  overflow: hidden;
+}
+.navbarz .navlink:hover {
   border-top: 4px solid #7da2a9;
   border-bottom: 4px solid #7da2a9;
   padding: 5px 0;
@@ -52,12 +95,100 @@ body {
 }
 .navbarz .navicons {
   display: flex;
-  justify-self: right;
+  justify-content: space-between;
+  background-color: #f7f7f7;
+}
+.navbarz .navicons .navicon {
+  transition: 0.3s ease;
+  background: #f7f7f7;
+  border-bottom: 4px solid #f7f7f7;
+  border-top: 4px solid #f7f7f7;
+  margin: 0px 7px;
   align-items: center;
 }
-.navbarz .navicons .carticon img {
+.navbarz .navicons .navicon a {
+  text-decoration: none;
+  color: black !important;
+}
+.navbarz .navicons img {
   width: 20px;
   height: 20px;
+}
+.navbarz .navicon:hover {
+  border-top: 4px solid #7da2a9;
+  border-bottom: 4px solid #7da2a9;
+  padding: 5px 0;
+}
+.navbarz .menu {
+  margin: 0 10px;
+  align-items: center;
+}
+.navbarz .menu img {
+  width: 20px;
+  height: 20px;
+}
+.navbarz .badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+.navbarz .label-warning[href],
+.navbarz .badge-warning[href] {
+  background-color: #c67605;
+}
+.navbarz #lblCartCount {
+  font-size: 12px;
+  background: #ff0000;
+  color: #fff;
+  padding: 0 6px;
+  vertical-align: top;
+  margin-left: -10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #f7f7f7;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: Releway;
+  font-size: 20px;
+  color: #7da2a9;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #7da2a9;
+  border-top: 4px solid #7da2a9;
+  border-bottom: 4px solid #7da2a9;
+  padding: 5px 0;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 36px;
+  margin-right: 20px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
