@@ -193,10 +193,11 @@ color: $txtcolor !important ;
 .menu{
         margin: 0 10px;
         align-items: center;
+        button{
+            border: none;
+        }
         
     img{
-
-    
     width: 20px;
     height: 20px;
 }

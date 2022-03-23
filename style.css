@@ -123,6 +123,9 @@ body {
   margin: 0 10px;
   align-items: center;
 }
+.navbarz .menu button {
+  border: none;
+}
 .navbarz .menu img {
   width: 20px;
   height: 20px;
