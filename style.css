@@ -125,6 +125,7 @@ body {
 }
 .navbarz .menu button {
   border: none;
+  background-color: transparent;
 }
 .navbarz .menu img {
   width: 20px;
