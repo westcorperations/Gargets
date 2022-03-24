@@ -200,7 +200,7 @@ body {
   position: absolute;
   background-color: #7da2a9;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .banner .banner {
     height: 30vh;
     background-color: #f7f7f7;
@@ -214,9 +214,9 @@ body {
   overflow: none;
   background-size: cover;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .banner .slider img {
-    height: 30vh;
+    height: 50vh;
     border-radius: 20px;
     padding: 0 10px;
   }
@@ -235,30 +235,30 @@ body {
   font-family: IBMPlexSans;
 }
 .banner .overlay .content h1 {
-  font-size: 30px;
+  font-size: 20px;
 }
 .banner .overlay .content h3 {
-  font-size: 15px;
+  font-size: 10px;
   width: 80%;
-  margin: 20px auto 100px;
+  margin: 10px auto 20px;
   font-weight: 100;
-  line-height: 25px;
+  line-height: 20px;
 }
 @media screen and (max-width: 600px) {
   .banner .overlay .content {
-    margin: 70px auto 0;
+    margin: 100px auto 0;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .banner .overlay {
-    height: 30vh;
+    height: 50vh;
     border-radius: 10px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .banner {
-    height: 30vh;
+    height: 50vh;
     border-radius: 10px;
   }
 }

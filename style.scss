@@ -281,7 +281,7 @@ height: 70vh;
 position: absolute;
 background-color: $primaryColor1;
 
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
     .banner{
         height:30vh;
 background-color: $primaryColor2;
@@ -299,9 +299,9 @@ background-size: cover;
 
 
 } 
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
     .slider img{
-        height:30vh;
+        height:50vh;
         border-radius:20px ;
         padding: 0 10px;
 
@@ -325,26 +325,27 @@ background-size: cover;
         font-family:$fontfamily1;
         
         h1{
-            font-size: 30px;
+             font-size: 20px;
         }
+
         h3{
-        font-size: 15px;
+        font-size: 10px;
             width: 80%;
-            margin: 20px auto 100px;
+            margin: 10px auto 20px;
             font-weight: 100;
-            line-height: 25px;
+            line-height: 20px;
         }
     }
     @media screen and (max-width:600px){
         .content{
-            margin: 70px auto 0;
+            margin: 100px auto 0;
             
 
         }}
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
     .overlay{
-        height:30vh;
+        height:50vh;
         border-radius:10px ;
         // padding: 0 10px;
         
@@ -354,9 +355,9 @@ background-size: cover;
 }
 
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:700px){
     .banner{
-        height:30vh;
+        height:50vh;
         border-radius:10px ;
     
         
