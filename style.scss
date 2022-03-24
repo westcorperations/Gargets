@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
 // varables
 $primaryColor1:#7da2a9;
 $primaryColor2:#f7f7f7;
@@ -7,6 +8,8 @@ $btnDanger:red;
 $txtcolor:black;
 $fullwidth:100%;
 $navlinktextsize:17px;
+$fontfamily1:IBM+Plex+Sans;
+$fontfamily2:Raleway;
 
 
 
@@ -17,6 +20,11 @@ body {
     margin: 0px;
     background: $primaryColor2;
     color: $txtcolor;
+    font: {
+        family:Raleway!important;
+        display: swap !important;
+        weight:500;
+    }
 }
 
 // navigation bar style
@@ -35,7 +43,7 @@ body {
 
     align-content: center;
     text-align: center;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 8px $primaryColor2;
 
     @media screen and (max-width:800px){
 .navbarz{
@@ -267,7 +275,93 @@ a {
     margin-right: 20px;
   }
 }
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-  }
+.banner{
+width: 100%;
+height: 70vh;
+position: absolute;
+background-color: $primaryColor1;
+
+@media screen and (max-width:600px){
+    .banner{
+        height:30vh;
+background-color: $primaryColor2;
+
+    }
+}
+
+.slider img{
+   width: 100%;
+height: 70vh;
+position: absolute;
+top: 0;
+overflow: none;
+background-size: cover;
+
+
+} 
+@media screen and (max-width:600px){
+    .slider img{
+        height:30vh;
+        border-radius:20px ;
+        padding: 0 10px;
+
+
+    }
+}
+
+
+.overlay{
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)); 
+    position: absolute;
+    
+   
+    .content{
+        width: 60%;
+        margin: 160px auto 0;
+        text-align: center;
+        color: $primaryColor2;
+        font-family:$fontfamily1;
+        
+        h1{
+            font-size: 30px;
+        }
+        h3{
+        font-size: 15px;
+            width: 80%;
+            margin: 20px auto 100px;
+            font-weight: 100;
+            line-height: 25px;
+        }
+    }
+    @media screen and (max-width:600px){
+        .content{
+            margin: 70px auto 0;
+            
+
+        }}
+}
+@media screen and (max-width:600px){
+    .overlay{
+        height:30vh;
+        border-radius:10px ;
+        // padding: 0 10px;
+        
+
+
+    }
+}
+
+}
+@media screen and (max-width:600px){
+    .banner{
+        height:30vh;
+        border-radius:10px ;
+    
+        
+
+
+    }
+}
+
