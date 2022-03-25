@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
 body {
   max-width: 100%;
   margin: 0px;
@@ -202,7 +203,7 @@ body {
 }
 @media screen and (max-width: 700px) {
   .banner .banner {
-    height: 30vh;
+    height: 70vh;
     background-color: #f7f7f7;
   }
 }
@@ -213,10 +214,26 @@ body {
   top: 0;
   overflow: none;
   background-size: cover;
+  animation: zoom 3s linear infinite;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(0.5);
+  }
+  15% {
+    transform: scale(0.8);
+  }
+  85% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(0.8);
+  }
 }
 @media screen and (max-width: 700px) {
   .banner .slider img {
-    height: 50vh;
+    max-height: 300px;
+    height: 70vh;
     border-radius: 20px;
     padding: 0 10px;
   }
@@ -232,33 +249,44 @@ body {
   margin: 160px auto 0;
   text-align: center;
   color: #f7f7f7;
-  font-family: Raleway;
-}
-.banner .overlay .content h1 {
-  font-size: 30px;
+  font-family: SourceSansPro, sans-serif;
 }
 .banner .overlay .content h3 {
-  font-size: 15px;
+  font-size: 30px;
+  font-weight: 900;
+}
+.banner .overlay .content p {
   width: 80%;
-  margin: 20px auto 100px;
-  font-weight: 100;
+  margin: 0px auto 50px;
+  font-weight: 400;
   line-height: 25px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 544px) {
+  .banner .overlay p {
+    font-size: smaller;
+    font-weight: 100;
+    line-height: 12px;
+    max-height: 30px;
+  }
+}
+@media screen and (max-width: 700px) {
   .banner .overlay .content {
-    margin: 5% auto 0;
+    margin: 40px auto 0;
+    width: 100%;
   }
 }
 @media screen and (max-width: 700px) {
   .banner .overlay {
-    height: 50vh;
+    max-height: 300px;
+    height: 70vh;
     border-radius: 10px;
   }
 }
 
 @media screen and (max-width: 700px) {
   .banner {
-    height: 50vh;
+    max-height: 300px;
+    height: 70vh;
     border-radius: 10px;
   }
 }
