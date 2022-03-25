@@ -19,9 +19,10 @@ $fontfamily3:Source+Sans+Pro;
 
 // body style
 body {
-    max-width: 100%;
+    max-width: 100% !important;
     margin: 0px;
     height: 100vh;
+    display: block;
     
     background: $primaryColor2;
     color: $txtcolor;
@@ -36,6 +37,7 @@ body {
 .navbarz {
     background: $primaryColor2;
     display: flex;
+
     flex-direction:row;
      justify-content:space-between;
     padding: 10px;
@@ -247,7 +249,7 @@ color: $txtcolor !important ;
     width:0px;
     position:fixed;
 z-index:1;
-top:0;
+top:27px;
 left:0;
 background: $primaryColor2;
 overflow-x: hidden;
@@ -332,7 +334,8 @@ animation: zoom 3s linear infinite;
 
 
 .overlay{
-    width: 100%;
+width: 100%;
+//   padding-right: 20px;
     height: 70vh;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); 
     position: absolute;
@@ -405,8 +408,78 @@ animation: zoom 3s linear infinite;
 
     }
 }
-.product{
 
-    display: grid;
+.carousel {
+    background:$primaryColor2;
+    margin-top: 10px;
+  }
+  
+  .carousel-cell {
+    width:20%;
+    height: 100px;
+    margin-right: 10px;
+    background: $primaryColor1;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+  }
+  
+  /* cell number */
+  .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color:$primaryColor1;
+  }
+  .topdeals{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    // border: 2px solid black;
+    width: 100%;
+    // margin: 2px 2px;
+    
+       .header{
+        background: $primaryColor1;
+        
+    
+
+       }
+
+.footer{
+    background: $primaryColor1;
 }
 
+.content{
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width:200px;
+        height:200px;
+        background: $primaryColor1;
+        margin: 7px  7px 50px 7px;
+
+        .card-header{
+
+            background: $primaryColor2;
+        }
+        .card-img{
+            img{
+            width: 100%;
+            height: 100%;
+            background: $primaryColor1;
+            object-fit: contain;
+            }
+        }
+        .card-footer{
+            background: $primaryColor2;
+        }
+    }
+
+
+  }
+  
+
+  }

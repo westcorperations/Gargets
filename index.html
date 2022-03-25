@@ -7,11 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/flickity.min.css" media="screen">
+
   <title>Gadgets|Home </title>
 </head>
 
 <body onload="slider()">
-  <div class="navbarz">
+  <div class="navbarz sticky-top">
     <div class="navlinks   ">
       <div class="menu d-xl-none d-md-none">
         <button class="" onclick="openNav()">
@@ -94,11 +96,12 @@
   <!-- carosel -->
   <div class="container">
     <div class="row  ">
-      <div class="col">
+      <div class="col ">
         <h3 class="fw-bolder  fs-3 m-0"> New Collection</h3>
           <small class="text-danger pt-0 fst-italic" >original gadgets </small>
         
       </div>
+      
     </div>
     </div>
       <div class="banner ">
@@ -125,11 +128,70 @@
       </div>
       
 
-<div class="product">
-    <h1>hi</h1>
+      
+    </div>
+
   </div>
+  
+    <div class="carousel container" data-flickity='{ "autoPlay": true,"wrapAround": true, "contain": true}'>
+      <img src="/images/gargetbanner1.jpg" class="carousel-cell">
+      <img src="/images/laptop1.png" class="carousel-cell">
+      <img src="/images/banner1.jpg" class="carousel-cell">
+      <img src="/images/iphone132.png" class="carousel-cell">
+      <img src="/images/accessories1.png" class="carousel-cell">
+      <img src="/images/iphone13-img.png" class="carousel-cell">
+      <img src="/images/iphone13blue.png" class="carousel-cell">
+      <!-- <img src="/images/banner1.jpg" class="carousel-cell">
+      <img src="/images/banner1.jpg" class="carousel-cell">
+      <img src="/images/banner1.jpg" class="carousel-cell">
+      <img src="/images/banner1.jpg" class="carousel-cell">
+      <img src="/images/banner1.jpg" class="carousel-cell">
+      <img src="/images/banner1.jpg" class="carousel-cell"> -->
+
+    </div> <br>
+
+    <div class="topdeals  container-fluid">
+      <div class="header"> 
+        <span class="h4 fw-bolder"> Phones</span><br>
+        <small class="text-light">shop with ease</small>
+        <a href="#" class="float-end h5 text-decoration-none text-light align-center">see all</a>
+      </div>
+      <div class="content">
+        <div class="card">
+          <div class="card-header "> 
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+</div>
+
+<div class="card-img">
+<img src="/images/iphone132.png" alt="">
+</div>
+ <div class="card-footer">
+<h5>price and icon</h5>
+ </div>
+        </div>
+        <!-- <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
+        <div class="card">
+
+        </div>
+        <div class="card"> -->
+
+        </div>
+        </div>
+      </div>
+
+
+    </div>
+  
+
 </body>
 <script src="index.js"></script>
+<script src="/bootstrap-5.0.2-dist/js/flickity.pkgd.min.js"></script>
 <script src="/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 
 

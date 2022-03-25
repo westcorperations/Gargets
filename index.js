@@ -26,3 +26,4 @@ function openNav() {
       i++;
       setTimeout('slider()',3000);
   }
+ 
