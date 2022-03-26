@@ -455,6 +455,7 @@ width: 100%;
 .content{
 
     .card{
+        
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -466,6 +467,7 @@ width: 100%;
         border:0px solid $primaryColor2;
         border-radius: 20px;
         box-sizing: border-box;
+        cursor:pointer;
 
         .card-header{
 border: none;

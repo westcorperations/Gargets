@@ -339,6 +339,7 @@ body {
   border: 0px solid whitesmoke;
   border-radius: 20px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .phonedeals .content .card .card-header {
   border: none;
