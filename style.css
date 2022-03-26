@@ -6,7 +6,7 @@ body {
   margin: 0px;
   height: 100vh;
   display: block;
-  background: #f7f7f7;
+  background: whitesmoke;
   color: black;
   font-family: Raleway !important;
   font-display: swap !important;
@@ -14,7 +14,7 @@ body {
 }
 
 .navbarz {
-  background: #f7f7f7;
+  background: whitesmoke;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -24,7 +24,7 @@ body {
   font-family: Raleway;
   align-content: center;
   text-align: center;
-  box-shadow: 2px 2px 8px #f7f7f7;
+  box-shadow: 2px 2px 8px whitesmoke;
 }
 @media screen and (max-width: 800px) {
   .navbarz .navbarz {
@@ -33,7 +33,7 @@ body {
 }
 .navbarz .navlinks {
   display: flex;
-  background: #f7f7f7;
+  background: whitesmoke;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -46,9 +46,9 @@ body {
   font-weight: 10px;
   font-size: 20px;
   transition: 0.3s ease;
-  background: #f7f7f7;
-  border-bottom: 4px solid #f7f7f7;
-  border-top: 4px solid #f7f7f7;
+  background: whitesmoke;
+  border-bottom: 4px solid whitesmoke;
+  border-top: 4px solid whitesmoke;
   margin: 0 20px;
 }
 @media screen and (max-width: 600px) {
@@ -63,7 +63,7 @@ body {
 .navbarz .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f7f7f7;
+  background-color: whitesmoke;
   min-width: 160px;
   margin-top: 10px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -78,16 +78,16 @@ body {
   text-align: left;
 }
 .navbarz .dropdown-content a:hover {
-  background-color: #7da2a9;
-  color: #f7f7f7;
+  background-color: #7DA2A9;
+  color: whitesmoke;
 }
 .navbarz .dropdown-content .dropdown {
   float: left;
   overflow: hidden;
 }
 .navbarz .navlink:hover {
-  border-top: 4px solid #7da2a9;
-  border-bottom: 4px solid #7da2a9;
+  border-top: 4px solid #7DA2A9;
+  border-bottom: 4px solid #7DA2A9;
   padding: 5px 0;
 }
 .navbarz .navsearch {
@@ -96,20 +96,20 @@ body {
 .navbarz .navsearch input[type=search] {
   float: right;
   padding: 6px;
-  border-color: #7da2a9;
+  border-color: #7DA2A9;
   border-radius: 10px;
   font-size: 15px;
 }
 .navbarz .navicons {
   display: flex;
   justify-content: space-between;
-  background-color: #f7f7f7;
+  background-color: whitesmoke;
 }
 .navbarz .navicons .navicon {
   transition: 0.3s ease;
-  background: #f7f7f7;
-  border-bottom: 4px solid #f7f7f7;
-  border-top: 4px solid #f7f7f7;
+  background: whitesmoke;
+  border-bottom: 4px solid whitesmoke;
+  border-top: 4px solid whitesmoke;
   margin: 0px 7px;
   align-items: center;
 }
@@ -122,8 +122,8 @@ body {
   height: 20px;
 }
 .navbarz .navicon:hover {
-  border-top: 4px solid #7da2a9;
-  border-bottom: 4px solid #7da2a9;
+  border-top: 4px solid #7DA2A9;
+  border-bottom: 4px solid #7DA2A9;
   padding: 5px 0;
 }
 .navbarz .menu {
@@ -169,7 +169,7 @@ body {
   z-index: 1;
   top: 27px;
   left: 0;
-  background: #f7f7f7;
+  background: whitesmoke;
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
@@ -179,14 +179,14 @@ body {
   text-decoration: none;
   font-family: Releway;
   font-size: 20px;
-  color: #7da2a9;
+  color: #7DA2A9;
   display: block;
   transition: 0.3s;
 }
 .sidenav a:hover {
-  color: #7da2a9;
-  border-top: 4px solid #7da2a9;
-  border-bottom: 4px solid #7da2a9;
+  color: #7DA2A9;
+  border-top: 4px solid #7DA2A9;
+  border-bottom: 4px solid #7DA2A9;
   padding: 5px 0;
 }
 .sidenav .closebtn {
@@ -200,12 +200,12 @@ body {
 .banner {
   width: 100%;
   height: 70vh;
-  background-color: #7da2a9;
+  background-color: #7DA2A9;
 }
 @media screen and (max-width: 700px) {
   .banner .banner {
     height: 70vh;
-    background-color: #f7f7f7;
+    background-color: whitesmoke;
   }
 }
 .banner .slider img {
@@ -248,7 +248,7 @@ body {
   width: 60%;
   margin: 160px auto 0;
   text-align: center;
-  color: #f7f7f7;
+  color: whitesmoke;
   font-family: SourceSansPro, sans-serif;
 }
 .banner .overlay .content h3 {
@@ -291,7 +291,7 @@ body {
   }
 }
 .carousel {
-  background: #f7f7f7;
+  background: whitesmoke;
   margin-top: 10px;
 }
 
@@ -299,7 +299,7 @@ body {
   width: 20%;
   height: 100px;
   margin-right: 10px;
-  background: #7da2a9;
+  background: #7DA2A9;
   border-radius: 5px;
   counter-increment: gallery-cell;
 }
@@ -311,41 +311,64 @@ body {
   content: counter(gallery-cell);
   line-height: 200px;
   font-size: 80px;
-  color: #7da2a9;
+  color: #7DA2A9;
 }
 
-.topdeals {
+.phonedeals {
   display: flex;
   flex-direction: column;
   justify-content: start;
   width: 100%;
 }
-.topdeals .header {
-  background: #7da2a9;
+.phonedeals .header {
+  background: #7DA2A9;
+  max-width: 100%;
 }
-.topdeals .footer {
-  background: #7da2a9;
+.phonedeals .footer {
+  background: #7DA2A9;
 }
-.topdeals .content .card {
+.phonedeals .content .card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 200px;
-  height: 200px;
-  background: #7da2a9;
-  margin: 7px 7px 50px 7px;
+  max-height: 500px;
+  background: whitesmoke;
+  margin: 7px 7px 7px 7px;
+  box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border: 0px solid whitesmoke;
+  border-radius: 20px;
+  box-sizing: border-box;
 }
-.topdeals .content .card .card-header {
-  background: #f7f7f7;
+.phonedeals .content .card .card-header {
+  border: none;
+  background: whitesmoke;
 }
-.topdeals .content .card .card-img img {
+.phonedeals .content .card .card-img {
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+.phonedeals .content .card .card-img img {
   width: 100%;
   height: 100%;
-  background: #7da2a9;
+  background: lightgray;
   object-fit: contain;
 }
-.topdeals .content .card .card-footer {
-  background: #f7f7f7;
+.phonedeals .content .card .card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background: whitesmoke;
+}
+.phonedeals .content .product-icon button {
+  border-radius: 50%;
+}
+.phonedeals .content .product-icon button img {
+  width: 10px;
+  height: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
