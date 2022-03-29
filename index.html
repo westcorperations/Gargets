@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- head  -->
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/flickity.min.css" media="screen">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/flickity.min.css" media="screen">
 
   <title>Gadgets|Home </title>
 </head>
 
 <body onload="slider()">
   <!-- nav bar for destop -->
-  <div class="navbarz sticky-top">
+  <div class="navbarz fixed-top">
     <div class="navlinks   ">
-      <div class="menu d-xl-none d-md-none">
+      <div class="menu d-xl-none d-lg-none">
         <button class="" onclick="openNav()">
 
-          <img src="/images/menu.png" alt="" srcset="" id="">
+          <img src="images/menu.png" alt="" srcset="" id="">
         </button>
       </div>
-      <div class="navlogo d-none d-md-block  ">
+      <div class="navlogo d-none d-lg-block  ">
         <a href="index.html">
-          Gadgets </a></div>
-          <div class="navlink d-none d-md-block">
-            <a href="index.html">
-              Home</a>
-          </div>
-      <div class="navlink d-none d-md-block dropdown-toggle dropdown">
+          Gadgets </a>
+      </div>
+      <div class="navlink d-none d-lg-block">
+        <a href="index.html">
+          Home</a>
+      </div>
+      <div class="navlink d-none d-lg-block dropdown-toggle dropdown">
         <a href="#">Account</a>
         <div class="dropdown-content">
-        <a href="#">Profile</a>
-        <a href="#">Login</a>
-        <a href="#">Signup</a>
+          <a href="#">Profile</a>
+          <a href="login.html">Login</a>
+          <a href="#">Signup</a>
         </div>
       </div>
-      <div class="navlink d-none d-md-block dropdown-toggle dropdown">
+      <div class="navlink d-none d-lg-block dropdown-toggle dropdown">
         <a href="#">Category</a>
         <div class="dropdown-content">
           <a href="#">Phones</a>
           <a href="#">Laptop</a>
           <a href="#">Accessories</a>
-          </div>
+        </div>
       </div>
-      <div class="navlink d-none d-md-block">
+      <div class="navlink d-none d-lg-block">
         <a href="#">
           About Us</a>
       </div>
-      <div class="navsearch d-none d-md-block">
+      <div class="navsearch d-none d-lg-block">
         <form action="">
           <input type="search" name="" id="" placeholder="search any product">
         </form>
@@ -63,12 +65,12 @@
 
 
       <div class="navicon">
-        <img src="/images/wishlist.svg" alt="cart" class="">
+        <img src="images/wishlist.svg" alt="cart" class="">
         <span class='badge badge-warning' id='lblCartCount'> 5 </span>
 
       </div>
       <div class="navicon">
-        <img src="/images/shopping-cart.png" alt="cart" class="">
+        <img src="images/shopping-cart.png" alt="cart" class="">
         <span class='badge badge-warning' id='lblCartCount'> 5 </span>
 
 
@@ -81,17 +83,17 @@
   <!-- side nav for mobile -->
   <div class="sidenav" id="mySidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-<h5 class="text-center">Account</h5>
-<a href="#" class="navlink "><span><img src="/images/caret-right (1).svg" alt=""></span> Profile</a>
-<a href="#" class="navlink "><span><img src="/images/caret-right (1).svg" alt=""></span> Login</a>
-<a href="#" class="navlink "><span><img src="/images/caret-right (1).svg" alt=""></span> Signup</a>
-<h5 class="text-center">Categories</h5>
-<a href="#" class="navlink "> <span><img src="/images/caret-right (1).svg" alt=""></span>Phone </a>
-    <a href="#" class="navlink "><span><img src="/images/caret-right (1).svg" alt=""></span>Computers</a>
-    <a href="#" class="navlink "><span><img src="/images/caret-right (1).svg" alt=""></span>Accessories</a>
-   <h5 class="text-center">Others</h5>
-   <a href="#" class="navlink "> <span><img src="/images/caret-right (1).svg" alt=""></span>About Us </a>
-   <a href="index.html" class="navlink "> <span><img src="/images/caret-right (1).svg" alt=""></span> Home </a>
+    <h5 class="text-center">Account</h5>
+    <a href="#" class="navlink "><span><img src="images/caret-right (1).svg" alt=""></span> Profile</a>
+    <a href="login.html" class="navlink "><span><img src="images/caret-right (1).svg" alt=""></span> Login</a>
+    <a href="#" class="navlink "><span><img src="images/caret-right (1).svg" alt=""></span> Signup</a>
+    <h5 class="text-center">Categories</h5>
+    <a href="#" class="navlink "> <span><img src="images/caret-right (1).svg" alt=""></span>Phone </a>
+    <a href="#" class="navlink "><span><img src="images/caret-right (1).svg" alt=""></span>Computers</a>
+    <a href="#" class="navlink "><span><img src="images/caret-right (1).svg" alt=""></span>Accessories</a>
+    <h5 class="text-center">Others</h5>
+    <a href="#" class="navlink "> <span><img src="images/caret-right (1).svg" alt=""></span>About Us </a>
+    <a href="index.html" class="navlink "> <span><img src="images/caret-right (1).svg" alt=""></span> Home </a>
 
 
 
@@ -103,185 +105,214 @@
     <div class="row  ">
       <div class="col ">
         <h3 class="fw-bolder  fs-3 m-0"> New Collection</h3>
-          <small class="text-danger pt-0 fst-italic" >original gadgets </small>
-        
+        <small class="text-danger pt-0 fst-italic">original gadgets </small>
+
       </div>
-      
+
     </div>
+  </div>
+
+
+  <!-- carosel banner -->
+  <div class="banner ">
+    <div class="slider ">
+      <img src="images/iphone132.png" alt="banner image 1" id="slideImg">
+
+
     </div>
+    <div class="overlay">
+      <div class="content">
+        <h5 class=" h3 h6-sm"> Get Affordable Gadgets</h3>
+          <p>Shop with us and never regret. Remember to sign up to our news letter for regular updates</p>
+          <div>
+            <button type="button" class="btn btn-outline-success btn-sm">SHOP NOW</button>
+            <button type="button" class="btn btn-outline-info btn-sm">NEWSLETTER</button>
 
-
-    <!-- carosel banner -->
-      <div class="banner ">
-        <div class="slider ">
-          <img src="/images/iphone132.png" alt="banner image 1" id="slideImg">
-
-          
-        </div>
-        <div class="overlay">
-          <div class="content">
-            <h5 class=" h3 h6-sm"> Get Affordable Gadgets</h3>
-         <p>Shop with  us and never regret. Remember to sign up to ur news letter for regular updates</p>
-         <div>
-           <button type="button" class="btn btn-outline-success btn-sm">SHOP NOW</button>
-           <button type="button" class="btn btn-outline-info btn-sm">NEWSLETTER</button>
-
-         </div>
           </div>
-
-        </div>
-      
-        
-
       </div>
-      
 
-      
-    
+    </div>
+
+
+
+  </div>
+
+
+
+
   <!-- ADS slider -->
 
-    <div class="carousel container" data-flickity='{ "autoPlay": true,"wrapAround": true, "contain": true}'>
-      <img src="/images/gargetbanner1.jpg" class="carousel-cell">
-      <img src="/images/laptop1.png" class="carousel-cell">
-      <img src="/images/banner1.jpg" class="carousel-cell">
-      <img src="/images/iphone132.png" class="carousel-cell">
-      <img src="/images/accessories1.png" class="carousel-cell">
-      <img src="/images/iphone13-img.png" class="carousel-cell">
-      <img src="/images/iphone13blue.png" class="carousel-cell">
-      
-    </div> <br>
+  <div class="carousel " data-flickity='{ "autoPlay": true,"wrapAround": true, "contain": true}'>
+    <img src="images/gargetbanner1.jpg" class="carousel-cell">
+    <img src="images/laptop1.png" class="carousel-cell">
+    <img src="images/banner1.jpg" class="carousel-cell">
+    <img src="images/iphone132.png" class="carousel-cell">
+    <img src="images/accessories1.png" class="carousel-cell">
+    <img src="images/iphone13-img.png" class="carousel-cell">
+    <img src="images/iphone13blue.png" class="carousel-cell">
 
-    <!-- phone category home display -->
-    <div class="phonedeals container-sm">
-      <div class="header p-2"> 
-        <span class="h4 fw-bolder"> Phones</span><br>
-        <small class="text-light">shop with ease</small>
-        <a href="#" class="float-end h5 text-decoration-none text-light align-center">see all</a>
-      </div>
-      <div class="content">
-    <div class="carousel " data-flickity='{ "wrapAround": true, "contain": true}'>
+  </div> <br>
+
+  <!-- phone category home display -->
+  <div class="phonedeals ">
+    <div class="header p-2">
+      <span class="h4 fw-bolder"> Phones</span><br>
+      <small class="text-light">shop with ease</small>
+      <a href="#" class="float-end h5 text-decoration-none text-light align-center">see all</a>
+    </div>
+    <div class="content">
+      <div class="carousel" data-flickity='{ "wrapAround": true, "contain": true}'>
         <div class="card ">
-          <div class="card-header "> 
+          <a href="singlepage.html">
+          <div class="card-header ">
             <span class="product-name fs-6 fw-bolder">Product Name</span><br>
             <span class="product-brand fs-6 fw-bold">Brand</span>
-</div>
+          </div>
 
-<div class="card-img">
-<img src="/images/iphone132.png" alt=""class="carousel-cell">
-</div>
- <div class="card-footer">
-<div class="product-price">
-<span class="fs-6 fw-bolder">$300</span> <br>
-<span class=" fw-bolder "> <small>Price</small> </span>
-</div>
-<div class="product-icon">
-  <button class="btn  btn-outline-dark "> <a href="#">
-<img src="/images/shopping-cart.png" alt=""> </a></button>
-</div>
- </div>
-</div>
-        <div class="card ">
-          <div class="card-header "> 
-            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
-            <span class="product-brand fs-6 fw-bold">Brand</span>
-</div>
-
-<div class="card-img">
-<img src="/images/iphone13-img.png" alt=""class="carousel-cell">
-</div>
- <div class="card-footer">
-<div class="product-price">
-<span class="fs-6 fw-bolder">$300</span> <br>
-<span class=" fw-bolder "> <small>Price</small> </span>
-</div>
-<div class="product-icon">
-  <button class="btn  btn-outline-dark "> <a href="#">
-<img src="/images/shopping-cart.png" alt=""> </a></button>
-</div>
- </div>
-</div>
-        <div class="card ">
-          <div class="card-header "> 
-            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
-            <span class="product-brand fs-6 fw-bold">Brand</span>
-</div>
-
-<div class="card-img">
-<img src="/images/iphone13blue.png" alt=""class="carousel-cell">
-</div>
- <div class="card-footer">
-<div class="product-price">
-<span class="fs-6 fw-bolder">$300</span> <br>
-<span class=" fw-bolder "> <small>Price</small> </span>
-</div>
-<div class="product-icon">
-  <button class="btn  btn-outline-dark "> <a href="#">
-<img src="/images/shopping-cart.png" alt=""> </a></button>
-</div>
- </div>
-</div>
-        <div class="card ">
-          <div class="card-header "> 
-            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
-            <span class="product-brand fs-6 fw-bold">Brand</span>
-</div>
-
-<div class="card-img">
-<img src="/images/iphone132.png" alt=""class="carousel-cell">
-</div>
- <div class="card-footer">
-<div class="product-price">
-<span class="fs-6 fw-bolder">$300</span> <br>
-<span class=" fw-bolder "> <small>Price</small> </span>
-</div>
-<div class="product-icon">
-  <button class="btn  btn-outline-dark "> <a href="#">
-<img src="/images/shopping-cart.png" alt=""> </a></button>
-</div>
- </div>
-</div>
-        <div class="card ">
-          <div class="card-header "> 
-            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
-            <span class="product-brand fs-6 fw-bold">Brand</span>
-</div>
-
-<div class="card-img">
-<img src="/images/iphone132.png" alt=""class="carousel-cell">
-</div>
- <div class="card-footer">
-<div class="product-price">
-<span class="fs-6 fw-bolder">$300</span> <br>
-<span class=" fw-bolder "> <small>Price</small> </span>
-</div>
-<div class="product-icon">
-  <button class="btn  btn-outline-dark "> <a href="#">
-<img src="/images/shopping-cart.png" alt=""> </a></button>
-</div>
- </div>
-</div>
-        <div class="card ">
-          <div class="card-header "> 
-            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
-            <span class="product-brand fs-6 fw-bold">Brand</span>
-</div>
-
-<div class="card-img">
-<img src="/images/iphone132.png" alt=""class="carousel-cell">
-</div>
- <div class="card-footer">
-<div class="product-price">
-<span class="fs-6 fw-bolder">$300</span> <br>
-<span class=" fw-bolder "> <small>Price</small> </span>
-</div>
-<div class="product-icon">
-  <button class="btn  btn-outline-dark "> <a href="#">
-<img src="/images/shopping-cart.png" alt=""> </a></button>
-</div>
- </div>
-</div>
+          <div class="card-img">
+            <img src="images/iphone132.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </a>
+          </div>
         </div>
-        <!-- <div class="card">
+        <div class="card ">
+          <a href="singlepage.html">
+          <div class="card-header ">
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+          </div>
+
+          <div class="card-img">
+            <img src="images/iphone132.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div></a>
+        </div>
+        <div class="card ">
+          <a href="singlepage.html">
+          <div class="card-header ">
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+          </div>
+
+          <div class="card-img">
+            <img src="images/iphone13-img.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div></a>
+        </div>
+        <div class="card ">
+          <a href="singlepage.html">
+          <div class="card-header ">
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+          </div>
+
+          <div class="card-img">
+            <img src="images/iphone13blue.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="card ">
+          <a href="singlepage.html">
+          <div class="card-header ">
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+          </div>
+
+          <div class="card-img">
+            <img src="images/iphone132.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div></a>
+        </div>
+        <div class="card ">
+          <a href="singlepage.html">
+          <div class="card-header ">
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+          </div>
+
+          <div class="card-img">
+            <img src="images/iphone132.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div> </a>
+        </div>
+        <div class="card ">
+          <a href="singlepage.html">
+          <div class="card-header ">
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+          </div>
+
+          <div class="card-img">
+            <img src="images/iphone132.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div></a>
+        </div>
+      </div>
+      <!-- <div class="card">
 
         </div>
         <div class="card">
@@ -292,150 +323,325 @@
         </div>
         <div class="card"> -->
 
+    </div>
+  </div> <br> <br>
+
+  <!-- laptop category home display -->
+  <div class="phonedeals  ">
+    <div class="header p-2">
+      <span class="h4 fw-bolder"> Laptops</span><br>
+      <small class="text-light">ready to shop with ease</small>
+      <a href="#" class="float-end h5 text-decoration-none text-light align-center">see all</a>
+    </div>
+    <div class="content">
+      <div class="carousel " data-flickity='{ "wrapAround": true, "contain": true}'>
+        <div class="card ">
+          <div class="card-header ">
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+          </div>
+
+          <div class="card-img">
+            <img src="images/laptop1.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div>
         </div>
-        </div> <br> <br>
+        <div class="card ">
+          <div class="card-header ">
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+          </div>
 
+          <div class="card-img">
+            <img src="images/laptop2.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-header ">
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+          </div>
 
-    <!-- laptop category home display -->
-    <div class="phonedeals container-sm ">
-      <div class="header p-2"> 
-        <span class="h4 fw-bolder"> Laptops</span><br>
-        <small class="text-light">ready to shop with ease</small>
-        <a href="#" class="float-end h5 text-decoration-none text-light align-center">see all</a>
+          <div class="card-img">
+            <img src="images/laptop3.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-header ">
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+          </div>
+
+          <div class="card-img">
+            <img src="images/laptop4.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-header ">
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+          </div>
+
+          <div class="card-img">
+            <img src="images/laptop1.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-header ">
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+          </div>
+
+          <div class="card-img">
+            <img src="images/laptop2.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-header ">
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+          </div>
+
+          <div class="card-img">
+            <img src="images/laptop3.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="content">
-    <div class="carousel " data-flickity='{ "wrapAround": true, "contain": true}'>
+
+
+    </div>
+  </div> <br> <br>
+
+  <!-- ACCESORIES SECTION  -->
+
+  <div class="phonedeals  ">
+    <div class="header p-2">
+      <span class="h4 fw-bolder"> Accesories</span><br>
+      <small class="text-light">ready to shop with ease</small>
+      <a href="#" class="float-end h5 text-decoration-none text-light align-center">see all</a>
+    </div>
+    <div class="content">
+      <div class="carousel " data-flickity='{ "wrapAround": true, "contain": true}'>
         <div class="card ">
-          <div class="card-header "> 
+          <div class="card-header ">
             <span class="product-name fs-6 fw-bolder">Product Name</span><br>
             <span class="product-brand fs-6 fw-bold">Brand</span>
-</div>
+          </div>
 
-<div class="card-img">
-<img src="/images/laptop1.png" alt=""class="carousel-cell">
-</div>
- <div class="card-footer">
-<div class="product-price">
-<span class="fs-6 fw-bolder">$300</span> <br>
-<span class=" fw-bolder "> <small>Price</small> </span>
-</div>
-<div class="product-icon">
-  <button class="btn  btn-outline-dark "> <a href="#">
-<img src="/images/shopping-cart.png" alt=""> </a></button>
-</div>
- </div>
-</div>
-        <div class="card ">
-          <div class="card-header "> 
-            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
-            <span class="product-brand fs-6 fw-bold">Brand</span>
-</div>
-
-<div class="card-img">
-<img src="/images/laptop1.png" alt=""class="carousel-cell">
-</div>
- <div class="card-footer">
-<div class="product-price">
-<span class="fs-6 fw-bolder">$300</span> <br>
-<span class=" fw-bolder "> <small>Price</small> </span>
-</div>
-<div class="product-icon">
-  <button class="btn  btn-outline-dark "> <a href="#">
-<img src="/images/shopping-cart.png" alt=""> </a></button>
-</div>
- </div>
-</div>
-        <div class="card ">
-          <div class="card-header "> 
-            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
-            <span class="product-brand fs-6 fw-bold">Brand</span>
-</div>
-
-<div class="card-img">
-<img src="/images/laptop2.png" alt=""class="carousel-cell">
-</div>
- <div class="card-footer">
-<div class="product-price">
-<span class="fs-6 fw-bolder">$300</span> <br>
-<span class=" fw-bolder "> <small>Price</small> </span>
-</div>
-<div class="product-icon">
-  <button class="btn  btn-outline-dark "> <a href="#">
-<img src="/images/shopping-cart.png" alt=""> </a></button>
-</div>
- </div>
-</div>
-        <div class="card ">
-          <div class="card-header "> 
-            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
-            <span class="product-brand fs-6 fw-bold">Brand</span>
-</div>
-
-<div class="card-img">
-<img src="/images/laptop2.png" alt=""class="carousel-cell">
-</div>
- <div class="card-footer">
-<div class="product-price">
-<span class="fs-6 fw-bolder">$300</span> <br>
-<span class=" fw-bolder "> <small>Price</small> </span>
-</div>
-<div class="product-icon">
-  <button class="btn  btn-outline-dark "> <a href="#">
-<img src="/images/shopping-cart.png" alt=""> </a></button>
-</div>
- </div>
-</div>
-        <div class="card ">
-          <div class="card-header "> 
-            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
-            <span class="product-brand fs-6 fw-bold">Brand</span>
-</div>
-
-<div class="card-img">
-<img src="/images/laptop2.png" alt=""class="carousel-cell">
-</div>
- <div class="card-footer">
-<div class="product-price">
-<span class="fs-6 fw-bolder">$300</span> <br>
-<span class=" fw-bolder "> <small>Price</small> </span>
-</div>
-<div class="product-icon">
-  <button class="btn  btn-outline-dark "> <a href="#">
-<img src="/images/shopping-cart.png" alt=""> </a></button>
-</div>
- </div>
-</div>
-        <div class="card ">
-          <div class="card-header "> 
-            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
-            <span class="product-brand fs-6 fw-bold">Brand</span>
-</div>
-
-<div class="card-img">
-<img src="/images/laptop1.png" alt=""class="carousel-cell">
-</div>
- <div class="card-footer">
-<div class="product-price">
-<span class="fs-6 fw-bolder">$300</span> <br>
-<span class=" fw-bolder "> <small>Price</small> </span>
-</div>
-<div class="product-icon">
-  <button class="btn  btn-outline-dark "> <a href="#">
-<img src="/images/shopping-cart.png" alt=""> </a></button>
-</div>
- </div>
-</div>
+          <div class="card-img">
+            <img src="images/phone charger.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div>
         </div>
-       
-       
+        <div class="card ">
+          <div class="card-header ">
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+          </div>
+
+          <div class="card-img">
+            <img src="images/laptopcell.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div>
         </div>
+        <div class="card ">
+          <div class="card-header ">
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+          </div>
+
+          <div class="card-img">
+            <img src="images/mp3player.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div>
         </div>
-      
+        <div class="card ">
+          <div class="card-header ">
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+          </div>
+
+          <div class="card-img">
+            <img src="images/laptop charger.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-header ">
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+          </div>
+
+          <div class="card-img">
+            <img src="images/laptopcell.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-header ">
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+          </div>
+
+          <div class="card-img">
+            <img src="images/phone charger.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-header ">
+            <span class="product-name fs-6 fw-bolder">Product Name</span><br>
+            <span class="product-brand fs-6 fw-bold">Brand</span>
+          </div>
+
+          <div class="card-img">
+            <img src="images/mp3player.png" alt="" class="carousel-cell">
+          </div>
+          <div class="card-footer">
+            <div class="product-price">
+              <span class="fs-6 fw-bolder">$300</span> <br>
+              <span class=" fw-bolder "> <small>Price</small> </span>
+            </div>
+            <div class="product-icon">
+              <button class="btn  btn-outline-dark "> <a href="#">
+                  <img src="images/shopping-cart.png" alt=""> </a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
 
 </body>
 <script src="index.js"></script>
-<script src="/bootstrap-5.0.2-dist/js/flickity.pkgd.min.js"></script>
-<script src="/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<script src="bootstrap-5.0.2-dist/js/flickity.pkgd.min.js"></script>
+<script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 
 
 </html>

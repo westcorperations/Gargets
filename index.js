@@ -11,9 +11,9 @@ function openNav() {
   
   var slideImg = document.getElementById("slideImg");
   var images = new Array(
-      "/images/iphone132.png",
-      "/images/laptop1.png",
-      "/images/accessories1.png",
+      "images/iphone132.png",
+      "images/laptop1.png",
+      "images/accessories1.png",
     
   );
   var len = images.length;
