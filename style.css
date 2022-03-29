@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
-* {
+a {
   text-decoration: none !important;
-  color: black;
+  color: black !important;
 }
 
 body {
@@ -254,7 +254,7 @@ body {
   width: 60%;
   margin: 160px auto 0;
   text-align: center;
-  color: whitesmoke;
+  color: whitesmoke !important;
   font-family: SourceSansPro, sans-serif;
 }
 .banner .overlay .content h3 {

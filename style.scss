@@ -18,9 +18,9 @@ $fontfamily3:Source+Sans+Pro;
 
 
 // body style
-* {
-    text-decoration: none !important;
-    color: $txtcolor;
+a{
+    text-decoration: none  !important;
+    color: $txtcolor !important;
 }
 
 body {
@@ -377,8 +377,9 @@ body {
             width: 60%;
             margin: 160px auto 0;
             text-align: center;
-            color: $primaryColor2;
+            color: $primaryColor2 !important;
             font-family: $fontfamily3, sans-serif;
+
 
             h3 {
                 font-size: 30px;
